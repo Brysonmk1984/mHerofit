@@ -1,0 +1,159 @@
+.section-full {
+ z-index: 1;
+ position: relative;
+}
+#siteOverlay {
+ z-index: -1;
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ opacity: 0.9;
+ background-color: #000;
+}
+#siteBackground {
+ z-index: 0;
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ opacity: 0.1;
+}
+
+#logoAndTagline {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ min-height: 150px;
+ /* box-shadow: 0 0 30px 15px transparent, 0 0 50px 30px #d4af37,  0 0 100px 45px ivory;*/
+}
+#logoAndTagline img {
+ width: 40%;
+}
+#storeIcons {
+ display: flex;
+ justify-content: center;
+ opacity: 0.3;
+}
+#storeIcons a {
+ cursor: default;
+}
+#storeIcons #googlePlay {
+ height: 41px;
+ margin-left: 10px;
+}
+#comingSoon {
+ padding: 10px 0px;
+ text-align: center;
+}
+footer {
+ background-color: #d4af37;
+ position: relative;
+ z-index: 1;
+}
+
+footer p {
+ color: #000 !important;
+}
+
+.content-container {
+ border: solid 1px #d4af37;
+}
+
+.left-content p {
+ text-align: center;
+}
+.left-content p span {
+ opacity: 0.7;
+}
+
+#unicorn {
+ text-align: center;
+}
+#unicorn img {
+ width: 125px;
+}
+
+#extraLinks {
+ margin: 10px auto 0px;
+ background-color: white;
+ width: 50%;
+ text-align: center;
+ padding: 12px;
+}
+
+h3 {
+ font-size: 26px;
+ line-height: 30px;
+ color: #121212;
+ text-transform: uppercase;
+ display: block;
+ font-weight: 900;
+ font-family: "Bebas Neue";
+}
+
+.tabs-text {
+ letter-spacing: 1.1px;
+}
+
+.btn {
+ letter-spacing: 1.1px;
+ font-size: 1.2em !important;
+}
+.d-none {
+ display: none;
+}
+.cd-praise {
+ padding-left: 0;
+ list-style-type: none;
+}
+
+.cd-praise > li {
+ opacity: 1;
+ font-family: "Georgia", serif;
+ font-style: italic;
+ line-height: 1.4;
+ margin-bottom: 2em;
+ padding: 0 14px;
+}
+.cd-praise > li > p {
+ margin: 15px 15px 5px 15px;
+}
+.cd-author-info li span {
+ font-size: 2em;
+}
+.testimonials-container .inner-content-container {
+ background-color: white;
+}
+
+/*
+========================================
+---------- RESPONSIVE STYLE ------------
+========================================
+*/
+
+/* TABLET */
+@media (max-width: 768px) {
+}
+
+/* DESKTOP */
+@media (max-width: 991px) {
+}
+
+/* LAPTOP */
+
+@media (min-width: 1024px) and (max-height: 800px) {
+ .home-container,
+ .about-container,
+ .projects-container,
+ .contact-container,
+ .testimonials-container {
+  margin-top: 20%;
+ }
+ .resp-tabs-list {
+  padding: 12% 0 !important;
+ }
+}
