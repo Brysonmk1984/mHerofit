@@ -62,7 +62,7 @@
  width: 100%;
  font-size: 20px;
  color: #121212;
- font-family: "Bebas Neue";
+ font-family: "Bebas Neue", Impact;
 }
 
 .VerticalTab.tabs_ver_6 .resp-tabs-list .resp-tab-active {
@@ -142,7 +142,7 @@ h2.resp-accordion .tabs-text {
  top: -3px;
  left: 0px;
  font-size: 18px;
- font-family: "Bebas Neue";
+ font-family: "Bebas Neue", Impact;
  letter-spacing: 1.1px;
 }
 

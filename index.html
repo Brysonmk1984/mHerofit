@@ -19,8 +19,7 @@
         <link rel="stylesheet" href="css/templatemo-style.css">
         <link rel="stylesheet" href="css/testimonial-slider.css">
         <link rel="stylesheet" href="css/herofit.css">
-
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&Bebas+Neue" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -42,25 +41,26 @@
     <section class="section-full ">
 
       <div class="container">
-
+        <div id="mainLogo">
+          <img src="img/herofit-logo.webp" />
+        </div>
         <div class="row">
 
           <div class="col-md-12">
 
-            <a href="index.html"><div class="responsive-logo hidden-lg hidden-md hidden-sm"><img src="img/herofit-logo.webp"></div></a>
             
             <!-- Begin .HorizontalTab -->
             <div class="VerticalTab VerticalTab_hash_scroll VerticalTab_6 tabs_ver_6">
             
               <ul class="resp-tabs-list hor_1">
-                <a href="index.html"><div class="logo"><img src="img/hf-logo.webp"></div></a>
-                <li class="tabs-1" data-tab-name="home"><span class="tabs-text">Home</span></li>
+                <li class="tabs-1"  data-tab-name="home"><span class="tabs-text">Home</span></li>
                 <li class="tabs-2" data-tab-name="about"><span class="tabs-text">About</span></li>
                 <li class="tabs-3" data-tab-name="game-play"><span class="tabs-text">Game Play</span></li>   
                 <li class="tabs-4" data-tab-name="testimonials"><span class="tabs-text">Praise</span></li>          
                 <li class="tabs-5" data-tab-name="contact"><span class="tabs-text">Contact</span></li>
+                <li id="webLoginLink"><a href="https://herofit.io/welcome?login=true">Web Login</a></li>
               </ul>
-              
+
               <div class="resp-tabs-container hor_1 tabs_scroll">
                 
                 <div class="fc-tab-1">
@@ -70,16 +70,16 @@
                       <div class="col-md-6">
                         <div class="left-content">
                           <div class="left-line"></div>  
-                          <h2>THE <em>FUN</em> AFTER THE <em>RUN</em></h2>
+                          <h2>THE <em>FITNESS</em> TRACKING <em>GAME</em></h2>
                           <!-- <div id="logoAndTagline">
                             <img src="img/herofit-logo.webp">
                             <strong>The Fitness Tracking Game</strong>
                           </div> -->
-                          <div id="logoAndTagline">
+                          <!-- <div id="logoAndTagline">
                             <h1>HeroFit</h1>
                             <h2 id="subheaderTagline">The Fitness Tracking Game</h2>
-                          </div>
-                          <p>Track your exercises to level up your Hero in game. <Br /> <span>Every minute you exercise, the stronger you get!</span></p>
+                          </div> -->
+                          <p>Track exercises to level up your Hero in game. <Br /> <span>Every minute you exercise, the stronger you get!</span></p>
                           <!-- <div class="primary-button">
                             <a href="#">Discover More</a>
                           </div> -->
@@ -88,7 +88,8 @@
                             <a href="#"><img id="googlePlay" src="img/googleappbadge.svg" /></a>
                           </div>
                           <div id="comingSoon">
-                            <strong>Available December 2021</strong>
+                            <span>Available</span><br />
+                            <strong>12 / <em>21</em> / 21</strong>
                           </div>
                         </div>
                       </div>
@@ -267,9 +268,7 @@
                       <a href="https://herofit.io/about#workoutBreakdown">Activities & Leveling</a><br />
                       <a href="https://herofit.io/battles">How the battles work</a><br />
                       <a href="https://herofit.io/ranking">Ranking Page</a><br />
-                      <a href="https://www.facebook.com/HeroFitGame">Facebook Page</a><br />
-                      <a href="https://reddit.com/r/herofit">Reddit Community</a><br />
-                      
+                      <a href="https://www.facebook.com/HeroFitGame">Facebook</a><br />
                     </p>
                   </div>
 
@@ -338,7 +337,7 @@
                             </div>
                             
                             <fieldset>
-                              <button type="submit" id="form-submit" class="btn">Submit</button>
+                              <button type="submit" id="form-submit" class="btn">Send</button>
                             </fieldset>
                           </form>
                         </div>
@@ -346,7 +345,7 @@
                       <div class="col-md-6">
                         <div class="more-info">
                           <p>HeroFit is a fitness tracking game with the goal of motivating people to be balanced and at their best. That's why the game is designed to <em>minimize time spent playing</em>, so players can get off the screen and go live their lives. We will never host ads in game, make it "play-to-win", or sell your data.</p>
-                          <p>Any other questions? Feel free to reach out and say hello, or visit our <a href="reddit.com/r/herofit">community</a>.
+                          <p>Any other questions? Feel free to reach out and say hello, or visit our <a href="https://reddit.com/r/herofit">Reddit community</a>.
                           <div id="unicorn">
                             <img src="img/unicorn.png" alt="unicorn" />
                           </div>
@@ -375,11 +374,12 @@
     
 
       <footer>
-        <p><strong>&copy; 2021 HeroFit, LLC</strong><br />  
-        <a href="https://herofit.io/terms-of-service">Terms of Service</a><br /> 
-        <a href="https://herofit.io/privacy-policy">Privacy Policy</a>
-      </p> 
-               
+        <p>
+          <strong>&copy; 2021 HeroFit, LLC</strong>
+          <a href="https://herofit.io/terms-of-service">Terms of Service</a>
+          <a href="https://herofit.io/privacy-policy">Privacy Policy</a>
+        </p> 
+        <div class="footer-logo"><img src="img/hf-logo.webp"></div>   
       </footer>
     </div> <!-- /container -->        
 
