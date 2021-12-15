@@ -7,7 +7,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>HeroFit The Fitness Game</title>
-        <meta name="description" content="">
+        <meta name="description" content="Track your exercises and level up in this fitness RPG. Collect in game pets, potions and costumes while battling tougher foes.">
+        <meta name="keywords" content="Exercise, fitness, wearable, game, rpg, strava, herofit, level-up">
+        <meta name="author" content="Bryson Kruk">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="img/favicon.ico">
 
@@ -19,7 +21,7 @@
         <link rel="stylesheet" href="css/templatemo-style.css">
         <link rel="stylesheet" href="css/testimonial-slider.css">
         <link rel="stylesheet" href="css/herofit.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&Bebas+Neue&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&Bebas+Neue&display=swap" rel="stylesheet"> -->
         <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -39,7 +41,9 @@
 
     <!-- Begin HorizontalTab style 6 -->
     <section class="section-full ">
-
+      <div id="donateBanner" class="data-tab-donate">
+        <img id="donateButton" src="img/donate-button.png" />
+      </div>
       <div class="container">
         <div id="mainLogo">
           <img src="img/herofit-logo.webp" />
@@ -53,12 +57,12 @@
             <div class="VerticalTab VerticalTab_hash_scroll VerticalTab_6 tabs_ver_6">
             
               <ul class="resp-tabs-list hor_1">
-                <li class="tabs-1"  data-tab-name="home"><span class="tabs-text">Home</span></li>
-                <li class="tabs-2" data-tab-name="about"><span class="tabs-text">About</span></li>
-                <li class="tabs-3" data-tab-name="game-play"><span class="tabs-text">Game Play</span></li>   
-                <li class="tabs-4" data-tab-name="testimonials"><span class="tabs-text">Praise</span></li>          
-                <li class="tabs-5" data-tab-name="contact"><span class="tabs-text">Contact</span></li>
-                <li id="webLoginLink"><a href="https://herofit.io/welcome?login=true">Web Login</a></li>
+                <li class="tabs-1 data-tab-home"  data-tab-name="home"><span class="tabs-text">Home</span></li>
+                <li class="tabs-2 data-tab-about" data-tab-name="about"><span class="tabs-text">About</span></li>
+                <li class="tabs-3 data-tab-heroes" data-tab-name="heroes"><span class="tabs-text">Heroes</span></li>   
+                <li class="tabs-4 data-tab-praise" data-tab-name="praise"><span class="tabs-text">Praise</span></li>          
+                <li class="tabs-5 data-tab-contact" data-tab-name="contact"><span class="tabs-text">Contact</span></li>
+                <li id="webLoginLink" class="data-tab-web-login"><a href="https://herofit.io/welcome?login=true">Web Login</a></li>
               </ul>
 
               <div class="resp-tabs-container hor_1 tabs_scroll">
@@ -80,18 +84,22 @@
                             <h2 id="subheaderTagline">The Fitness Tracking Game</h2>
                           </div> -->
                           <p>Track exercises to level up your Hero in game. <Br /> <span>Every minute you exercise, the stronger you get!</span></p>
-                          <!-- <div class="primary-button">
-                            <a href="#">Discover More</a>
-                          </div> -->
+                          
+                          <div id="playVideo">
+                            <img id="playVideoImg" src="img/video-play-button.svg" />
+                          </div>
+                          
                           <div id="storeIcons">
                             <a href="#"><img src="img/appstorebadge.svg" /></a>
                             <a href="#"><img id="googlePlay" src="img/googleappbadge.svg" /></a>
                           </div>
                           <div id="comingSoon">
-                            <span>Available</span><br />
-                            <strong>12 / <em>21</em> / 21</strong>
+                            <span>Coming</span><br />
+                            <strong id="countdownTimer">12 / <em>21</em> / 21</strong>
+                            <!-- <strong>12 / <em>21</em> / 21</strong> -->
                           </div>
                         </div>
+                        
                       </div>
                       <div class="col-md-6">
                         <div class="right-content">
@@ -123,141 +131,152 @@
 
                   <div class="owl-carousel owl-theme projects-container content-container">
                     
-                    <div>
-                      <div class="project-item">
-                        <div class="thumb-holder">
-                          <div class="hover-effect">
-                            <div class="hover-content">
-                              <h4>Sign In</h4>
-                              <a href="img/splash-login.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
-                            </div>
-                          </div>
-                          <img src="img/splash-login.webp">
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="project-item">
-                        <div class="thumb-holder">
-                          <div class="hover-effect">
-                            <div class="hover-content">
-                              <h4>Project Four</h4>
-                              <a href="img/item-04.jpg" data-lightbox="image-1"><img src="img/project-icon.png"></a>
-                            </div>
-                          </div>
-                          <img  src="img/project-item-04.jpg">
-                        </div>
-                      </div>
-                    </div>
 
-                    <div>
+
+                    
                       <div class="project-item">
                         <div class="thumb-holder">
                           <div class="hover-effect">
                             <div class="hover-content">
-                              <h4>Battle Outcome</h4>
-                              <a href="img/outcome-screen.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                              <h4>Natural Ninja</h4>
+                              <a href="img/heroes/natural-ninja-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
                             </div>
                           </div>
-                          <img src="img/outcome-screen.webp">
+                          <img src="img/heroes/natural-ninja-2.webp" />
                         </div>
                       </div>
-                    </div>
-                    <div>
+             
+
+          
                       <div class="project-item">
                         <div class="thumb-holder">
                           <div class="hover-effect">
                             <div class="hover-content">
-                              <h4>Cycling</h4>
-                              <a href="img/bike.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                              <h4>Scavenger Robot</h4>
+                              <a href="img/heroes/scavenger-robot-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
                             </div>
                           </div>
-                          <img src="img/bike.webp">
+                          <img src="img/heroes/scavenger-robot-2.webp" />
                         </div>
                       </div>
-                    </div>
+              
+
+                  
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Solar Warrior</h4>
+                              <a href="img/heroes/solar-warrior-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                            </div>
+                          </div>
+                          <img src="img/heroes/solar-warrior-2.webp" />
+                        </div>
+                      </div>
+                 
+
+
+
+
+                   
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Boulder Bro</h4>
+                              <a href="img/heroes/boulder-bro-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                            </div>
+                          </div>
+                          <img src="img/heroes/boulder-bro-2.webp" />
+                        </div>
+                      </div>
+              
  
-                    <div>
+                   
                       <div class="project-item">
                         <div class="thumb-holder">
                           <div class="hover-effect">
                             <div class="hover-content">
-                              <h4>Jötnar</h4>
-                              <a href="img/loading-background.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                              <h4>Compost Creature</h4>
+                              <a href="img/heroes/compost-creature-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
                             </div>
                           </div>
-                          <img src="img/loading-background.webp">
+                          <img src="img/heroes/compost-creature-2.webp" />
                         </div>
                       </div>
-                    </div>
+                   
 
 
-                    <div>
+                    
                       <div class="project-item">
                         <div class="thumb-holder">
                           <div class="hover-effect">
                             <div class="hover-content">
-                              <h4>Home Screen</h4>
-                              <a href="img/home-screen.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                              <h4>Filtron Five</h4>
+                              <a href="img/heroes/filtron-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
                             </div>
                           </div>
-                          <img src="img/home-screen.webp">
+                          <img src="img/heroes/filtron-2.webp" />
                         </div>
                       </div>
-                    </div>
-                    <div>
-                      <div class="project-item">
-                        <div class="thumb-holder">
-                          <div class="hover-effect">
-                            <div class="hover-content">
-                              <h4>Inventory</h4>
-                              <a href="img/pets-screen.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
-                            </div>
-                          </div>
-                          <img src="img/pets-screen.webp">
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="project-item">
-                        <div class="thumb-holder">
-                          <div class="hover-effect">
-                            <div class="hover-content">
-                              <h4>Walking</h4>
-                              <a href="img/walking.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
-                            </div>
-                          </div>
-                          <img src="img/walking.webp">
-                        </div>
-                      </div>
-                    </div>
+              
 
-                    <div>
+                   
                       <div class="project-item">
                         <div class="thumb-holder">
                           <div class="hover-effect">
                             <div class="hover-content">
-                              <h4>Foes</h4>
-                              <a href="img/adversaries-screen.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                              <h4>Wildspeaker</h4>
+                              <a href="img/heroes/wildspeaker-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
                             </div>
                           </div>
-                          <img src="img/adversaries-screen.webp">
+                          <img src="img/heroes/wildspeaker-2.webp" />
                         </div>
                       </div>
-                    </div>
-                    <div>
+                 
+
+                    
                       <div class="project-item">
                         <div class="thumb-holder">
                           <div class="hover-effect">
                             <div class="hover-content">
-                              <h4>Battle Report</h4>
-                              <a href="img/battle-report-screen.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                              <h4>Empath</h4>
+                              <a href="img/heroes/empath-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
                             </div>
                           </div>
-                          <img src="img/battle-report-screen.webp">
+                          <img src="img/heroes/empath-2.webp" />
                         </div>
                       </div>
-                    </div>
+                
+
+                    
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Timber Terror</h4>
+                              <a href="img/heroes/timber-terror-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                            </div>
+                          </div>
+                          <img src="img/heroes/timber-terror-2.webp" />
+                        </div>
+                      </div>
+                    
+
+                    
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Chrono Guy</h4>
+                              <a href="img/heroes/chrono-guy-1.webp" data-lightbox="image-1"><img src="img/project-icon.png"></a>
+                            </div>
+                          </div>
+                          <img src="img/heroes/chrono-guy-2.webp" />
+                        </div>
+                      </div>
+                
+                    
                   </div>
                   <div id="extraLinks">
                       
@@ -279,7 +298,7 @@
 
 
                 
-                  <div class="testimonials-container content-container">
+                  <div class="praise-container content-container">
                     <div>
                       <div class="col-md-12 inner-content-container" >
                         <h2>Praise</h2>
@@ -298,6 +317,14 @@
                             <div class="cd-author">
                                 <ul class="cd-author-info">
                                   <li><span>Bicycle Berserker</span></li>
+                                </ul>
+                            </div>
+                          </li> 
+                          <li>
+                            <p>"There are 4 apps I open on a daily basis and HF is one of them :-D"</p>
+                            <div class="cd-author">
+                                <ul class="cd-author-info">
+                                  <li><span>Jay Queue</span></li>
                                 </ul>
                             </div>
                           </li> 
@@ -381,6 +408,151 @@
         </p> 
         <div class="footer-logo"><img src="img/hf-logo.webp"></div>   
       </footer>
+
+      <!-- PROMO VIDEO MODAL -->
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-video-container">
+          <div class="modal-content">
+            <div id="videoModalCloseButtonContainer">
+              <button type="button" class="close close-button-video" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+          
+            
+            <div class="modal-body">
+              <video id="herofitComingSoonVideo" controls src="videos/herofit-coming-soon.mp4" type='video/mp4' /></video>
+            </div>
+            <div id="modalLogo">
+              <img src="img/herofit-logo.webp" />
+              <div id="gameplayText"><h3>Gameplay</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DONATE MODAL -->
+      <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modalLabelLarge">HeroFit Needs Your <span>Help</span></h4>
+          </div>
+          
+          <div class="modal-body">
+           <p  style="text-align: justify;">
+            HeroFit is growing, but it's still not yet monetized. The goal is to sell in-game items to enhance the experience without making it pay-to win, but that's still a little ways out. And, we will never allow ads in-game. So...
+           </p>
+           <p style="text-align: center;">
+             <strong>If you enjoy HeroFit, please consider making a donation :)</strong>
+           </p>
+           <div id="donationMethods">
+              <div id="bitcoinButton" class="donation-method" data-modal-name="bitcoinModal">
+                <img src="img/bitcoin.png" />
+              </div>
+              <div id="venmoButton" class="donation-method" data-modal-name="venmoModal">
+                <img src="img/venmo.png" />
+              </div>
+              <div id="paypalButton" class="donation-method" data-modal-name="paypalModal">
+                <img src="img/paypal.png" />
+              </div>
+           </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- BITCOIN DONATION MODAL -->
+      <div id="bitcoinModal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content" >
+          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modalLabelLarge">Donate Bitcoin</h4>
+          </div>
+          
+          <div class="modal-body" style="text-align:center;">
+            <img src="img/bitcoin.png" width="40%" style="margin-bottom:10px; max-width: 100px;" />
+            <br />
+            <iframe src='https://mainnet.demo.btcpayserver.org/apps/5tCJgTpUhY8njm7fPMpgubVUKga/pos' style='max-width: 100%; min-height: 400px; border: 0;'></iframe>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <!-- VENMO DONATION MODAL -->
+      <div id="venmoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modalLabelLarge">Donate via Venmo</h4>
+          </div>
+          
+          <div class="modal-body" style="text-align:center;">
+            <a href="https://venmo.com/code?user_id=2215623673249792188&created=1639414364" target="_blank">
+              <img src="img/venmo.png" width="60%"  style="margin-bottom:10px;" alt="Donate via venmo" />
+            </a>
+            <br />
+            <a href="https://venmo.com/code?user_id=2215623673249792188&created=1639414364" target="_blank">
+              <img src="img/venmo-qr.png" width="80%" alt="Venmo QR Code" />
+            </a>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <!-- PAYPAL DONATION MODAL -->
+      <div  id="paypalModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modalLabelLarge">Donate via Paypal</h4>
+          </div>
+          
+          <div class="modal-body"  style="text-align:center;">
+            <img src="img/paypal.png"  width="60%" style="margin-bottom:10px;"  alt="Donate via paypal" />
+            <br />
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="business" value="KTF2EBXTGM63U" />
+              <input type="hidden" name="no_recurring" value="0" />
+              <input type="hidden" name="item_name" value="To keep HeroFit growing and the servers running." />
+              <input type="hidden" name="currency_code" value="USD" />
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <div id="buyMeCoffee">
+        <a href="https://www.buymeacoffee.com/brysonkruk" target="_blank">
+          <img src="img/buyMeCoffee.png" alt="buy me coffee" />
+        </a>
+      </div>
+
     </div> <!-- /container -->        
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -393,10 +565,12 @@
       <script src="js/easyResponsiveTabs.js"></script>
       <script>const $ = jQuery;</script>
       <script src="js/send-email-ajax.js"></script>
-      <script src="js/vendor/jquery.flexslider-min.js"></script>
+      <!-- <script src="js/vendor/jquery.flexslider-min.js"></script> 
       <script src="js/vendor/masonry.pkgd.min.js"></script>
-      <script src="js/vendor/testimonial-slider.js"></script>
-
+      <script src="js/vendor/testimonial-slider.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.js" integrity="sha512-oqSECbLRRAy3Sq2tJ0RmzbqXHprFS+n7WapvpI1t0V7CtV4vghscIQ8MYoQo6tp4MrJmih4SlOaYuCkPRi3j6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script  src="js/herofit.js"></script>
 
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-L586RE01XX"></script>

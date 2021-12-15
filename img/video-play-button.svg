@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>play-button-svgrepo-com</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="play-button-svgrepo-com" fill-rule="nonzero">
+            <circle id="Oval" fill="#D4AF37" cx="50" cy="50" r="50"></circle>
+            <g id="Group" transform="translate(36.206897, 22.413793)" fill="#FFFFFF">
+                <polygon id="Shape" points="39.6551724 27.5862069 1.72413793 53.4482759 1.72413793 28.0568966 1.72413793 1.72413793"></polygon>
+                <path d="M1.72413793,55.1724138 C1.44827586,55.1724138 1.17068966,55.1068966 0.918965517,54.9724138 C0.353448276,54.6741379 0,54.087931 0,53.4482759 L0,1.72413793 C0,1.08448276 0.353448276,0.498275862 0.918965517,0.2 C1.48448276,-0.1 2.16724138,-0.0586206897 2.69655172,0.3 L40.6275862,26.162069 C41.0965517,26.4827586 41.3793103,27.0155172 41.3793103,27.5862069 C41.3793103,28.1568966 41.0965517,28.6896552 40.6258621,29.0103448 L2.69482759,54.8724138 C2.40344828,55.0706897 2.0637931,55.1724138 1.72413793,55.1724138 Z M3.44827586,4.98793103 L3.44827586,50.1862069 L36.5948276,27.5862069 L3.44827586,4.98793103 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

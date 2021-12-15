@@ -1,3 +1,8 @@
+@font-face {
+ font-family: "Bebas Neue";
+ src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
 .resp-tabs-list {
  padding: 35px 0 !important;
 }
@@ -16,6 +21,42 @@
  z-index: 1;
  position: relative;
 }
+.section-full #donateBanner {
+ text-align: right;
+}
+.section-full #donateBanner img {
+ width: 15%;
+ margin: 20px;
+ max-width: 180px;
+ min-width: 150px;
+ /* Start the shake animation and make the animation last for 0.5 seconds */
+ animation: float 6s ease-in-out infinite;
+ animation-delay: 2s;
+ cursor: pointer;
+}
+.section-full #donateBanner img:hover {
+ animation-iteration-count: infinite;
+ box-shadow: 0 0 30px 10px #fff, /* inner white */ 0 0 50px 30px #d4af37, /* middle gold */ 0 0 100px 45px ivory; /* outer ivory */
+}
+#donationMethods {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 10px;
+ padding: 10px 0px;
+}
+.donation-method {
+ flex: 1;
+ text-align: center;
+ cursor: pointer;
+}
+.donation-method:hover {
+ animation: shake 0.5s;
+}
+
+.donation-method img {
+ width: 70%;
+}
+
 #siteOverlay {
  z-index: -1;
  position: fixed;
@@ -35,9 +76,16 @@
  height: 100%;
  opacity: 0.1;
 }
+#webLoginLink {
+ padding: 0px !important;
+}
 #webLoginLink a {
  color: #121212 !important;
  text-decoration: none !important;
+ display: block;
+ width: 100%;
+ height: 100%;
+ padding: 15px 0px;
 }
 #webLoginLink a:hover {
  color: #d4af37 !important;
@@ -53,6 +101,14 @@
 }
 #logoAndTagline img {
  width: 40%;
+}
+#playVideo {
+ text-align: center;
+ margin-bottom: 15px;
+}
+#playVideo img {
+ width: 60px;
+ cursor: pointer;
 }
 #storeIcons {
  display: flex;
@@ -70,7 +126,7 @@
  margin-top: 15px;
  padding: 10px 0px;
  text-align: center;
- font-family: "Bebas Neue", Impact !important;
+ font-family: "Bebas Neue", Impact, sans-serif !important;
  font-size: 1.2em;
 }
 #comingSoon em {
@@ -80,8 +136,11 @@
 #comingSoon strong {
  font-size: 2.5em;
 }
+#countdownTimer {
+ color: #f03131;
+}
 footer {
- font-family: "Bebas Neue", Impact !important;
+ font-family: "Bebas Neue", Impact, sans-serif !important;
  background-color: #d4af37;
  position: relative;
  display: flex;
@@ -123,7 +182,7 @@ footer .footer-logo img {
 
 .left-content p {
  text-align: center;
- margin-bottom: 30px !important;
+ margin-bottom: 15px !important;
 }
 .left-content p span {
  opacity: 0.7;
@@ -145,7 +204,7 @@ footer .footer-logo img {
 }
 
 h2 {
- font-family: "Bebas Neue", Impact !important;
+ font-family: "Bebas Neue", Impact, sans-serif !important;
  font-weight: 900;
  font-style: bold;
  margin-bottom: 25px !important;
@@ -156,7 +215,7 @@ h3 {
  color: #121212;
  text-transform: uppercase;
  display: block;
- font-family: "Bebas Neue", Impact !important;
+ font-family: "Bebas Neue", Impact, sans-serif !important;
  font-weight: 900;
  font-style: bold;
 }
@@ -182,7 +241,7 @@ h3 {
  font-family: "Georgia", serif;
  font-style: italic;
  line-height: 1.4;
- margin-bottom: 2em;
+ margin-bottom: 3em;
  padding: 0 14px;
 }
 .cd-praise > li > p {
@@ -191,8 +250,86 @@ h3 {
 .cd-author-info li span {
  font-size: 2em;
 }
-.testimonials-container .inner-content-container {
+.praise-container .inner-content-container {
  background-color: white;
+ text-align: center;
+}
+
+#generalModal {
+ z-index: 10000 !important;
+}
+
+.modal {
+ background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-dialog {
+ margin: 20vh auto 0px auto;
+}
+.modal-title {
+ font-family: "Bebas Neue", Impact, sans-serif !important;
+ font-size: 1.8em;
+}
+.modal-title span {
+ color: #d4af37;
+}
+#videoModal video {
+ width: 100%;
+ height: auto;
+ max-height: 100%;
+}
+#videoModalCloseButtonContainer {
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ z-index: 10000;
+}
+.modal-video-container .modal-content {
+ background-color: #d4af37 !important;
+}
+.modal .close-button-video {
+ background-color: #e7eddf;
+ border-radius: 50%;
+ width: 30px;
+ height: 30px;
+ opacity: 0.7;
+}
+#modalLogo {
+ width: 200px;
+ height: auto;
+ position: absolute;
+ left: 50%;
+ top: 10%;
+ margin-left: -100px;
+
+ z-index: 10000;
+}
+#modalLogo img {
+ width: 100%;
+}
+#modalLogo #gameplayText {
+ text-align: center;
+}
+
+#buyMeCoffee {
+ z-index: 1000;
+ position: fixed;
+ bottom: 20px;
+ left: 20px;
+ border-radius: 50%;
+ background-color: red;
+ width: 60px;
+ height: 60px;
+ text-align: center;
+ overflow: hidden;
+ box-shadow: 0px 3px 3px rgba(31, 31, 31, 0.625);
+}
+#buyMeCoffee img {
+ width: 100%;
+ cursor: pointer;
+}
+#buyMeCoffee:hover {
+ animation: shake 0.5s;
 }
 
 /*
@@ -210,6 +347,9 @@ h3 {
  #mainLogo img {
   padding: 5px 0px 0px;
  }
+ .modal-dialog {
+  margin: 0vh auto 0px auto;
+ }
 }
 
 /* DESKTOP */
@@ -219,6 +359,13 @@ h3 {
  }
  .left-line {
   display: none;
+ }
+ #videoModalCloseButtonContainer {
+  top: -12px;
+  right: -12px;
+ }
+ #videoModalCloseButtonContainer .close-button-video {
+  opacity: 1;
  }
 }
 
@@ -239,5 +386,69 @@ h3 {
  }
  #mainLogo img {
   width: 40%;
+ }
+}
+
+@media (max-width: 400px) and (min-height: 700px) {
+ .modal-dialog {
+  margin: 10vh auto 0px auto;
+ }
+}
+
+/* 
+ANIMATIONS
+*/
+
+@keyframes shake {
+ 0% {
+  transform: translate(1px, 1px) rotate(0deg);
+ }
+ 10% {
+  transform: translate(-1px, -2px) rotate(-1deg);
+ }
+ 20% {
+  transform: translate(-3px, 0px) rotate(1deg);
+ }
+ 30% {
+  transform: translate(3px, 2px) rotate(0deg);
+ }
+ 40% {
+  transform: translate(1px, -1px) rotate(1deg);
+ }
+ 50% {
+  transform: translate(-1px, 2px) rotate(-1deg);
+ }
+ 60% {
+  transform: translate(-3px, 1px) rotate(0deg);
+ }
+ 70% {
+  transform: translate(3px, 1px) rotate(-1deg);
+ }
+ 80% {
+  transform: translate(-1px, -1px) rotate(1deg);
+ }
+ 90% {
+  transform: translate(1px, 2px) rotate(0deg);
+ }
+ 100% {
+  transform: translate(1px, -2px) rotate(-1deg);
+ }
+}
+
+@keyframes float {
+ 0% {
+  transform: translatex(0px);
+ }
+ 25% {
+  transform: translatex(-8px);
+ }
+ 50% {
+  transform: translatex(0px);
+ }
+ 75% {
+  transform: translatex(8px);
+ }
+ 100% {
+  transform: translatex(0px);
  }
 }
