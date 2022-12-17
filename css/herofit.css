@@ -113,10 +113,14 @@
 #storeIcons {
  display: flex;
  justify-content: center;
- opacity: 0.3;
+
 }
+
 #storeIcons a {
- cursor: default;
+ cursor: pointer;
+}
+#storeIcons a:active {
+  opacity: 0.3;
 }
 #storeIcons #googlePlay {
  height: 41px;
