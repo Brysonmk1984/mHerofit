@@ -104,7 +104,7 @@
 }
 #playVideo {
  text-align: center;
- margin-bottom: 15px;
+  margin: 40px 0px;
 }
 #playVideo img {
  width: 60px;
