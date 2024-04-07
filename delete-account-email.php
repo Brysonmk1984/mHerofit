@@ -1,8 +1,7 @@
 <?php
-
     $to = "bryson.kruk@protonmail.com";   
-    $from = "contactForm@herofitgame.com";
-    $subject = "HeroFit Marketing Contact Form Message";
+    $from = "deleteForm@herofitgame.com";
+    $subject = "HeroFit Delete Account Form Message";
     $error = "";
 
     // Filter Spam
@@ -18,14 +17,6 @@
         }
         $body .= ucwords(str_replace("_", " ", $param_name)) . ": " . $param_val . "\n";
     }
-
-    // if(isset($_POST['email'])) {
-    //     $from = $_POST['email'];
-    // } else if(isset($_POST['contact_email'])) {
-    //     $from = $_POST['contact_email'];
-    // } else if(isset($_POST['contact-email'])) {
-    //     $from = $_POST['contact-email'];
-    // }
 
     if($from != "") {
         $success = mail($to, $subject, $body, "From:".$from);

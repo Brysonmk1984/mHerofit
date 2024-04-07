@@ -62,6 +62,7 @@
                 <li class="tabs-3 data-tab-heroes" data-tab-name="heroes"><span class="tabs-text">Heroes</span></li>   
                 <li class="tabs-4 data-tab-praise" data-tab-name="praise"><span class="tabs-text">Praise</span></li>          
                 <li class="tabs-5 data-tab-contact" data-tab-name="contact"><span class="tabs-text">Contact</span></li>
+                <li class="tabs-6 data-tab-contact" data-tab-name="delete"><span class="tabs-text">Delete Account</span></li>
                 <li id="webLoginLink" class="data-tab-web-login"><a href="https://herofit.io/welcome?login=true">Web Login</a></li>
               </ul>
 
@@ -371,6 +372,52 @@
                           <div id="unicorn">
                             <img src="img/unicorn.png" alt="unicorn" />
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+
+                <!-- DELETE ACCOUNT FORM -->
+                <div class="fc-tab-6">
+                
+                  <div class="contact-container content-container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="contact-form">
+                          <div class="heading">
+                            <h2>Delete Account & Data</h2>
+                          </div>
+                          <form id="delete-form" action="" method="POST">
+                            <fieldset>
+                              <input name="email" type="email" class="form-control" id="delete-email" placeholder="Account email to delete" required="">
+                            </fieldset>
+                            <fieldset>
+                              <textarea name="message" rows="6" class="form-control" id="delete-message" placeholder="Reason for deletion" required=""></textarea>
+                            </fieldset>
+                            <div class="form-group mb-4 d-none">
+                              Leave this empty:
+                              <input type="text" name="url" class="form-control" placeholder="Your URL" />
+                            </div>
+                            <div class="form-group mb-4">
+                              <div id="delete-result-message" class="d-none"></div>
+                            </div>
+                            
+                            <fieldset>
+                              <button type="submit" id="form-submit" class="btn">Submit</button>
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="more-info">
+                          <p>If you're looking to delete your HeroFit account, you're in the right place. You have two options:</p>
+                          <ul>
+                            <li>In the HeroFit app, go to the settings tab and at the bottom, there is a "Delete Account" button. This will immediately delete your account along with all data associated with it.</li>
+                            <li>If you would rather, you can submit a request for the HeroFit team to delete your account for you and as soon as possible, we'll respond with a few questions to verify the account belongs to you. After that's confirmed, we'll remove your account and all data associated with it.</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
