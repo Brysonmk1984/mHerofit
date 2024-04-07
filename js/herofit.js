@@ -8,7 +8,7 @@ jQuery(document).ready(function () {
   const donateButton = document.getElementById('donateButton');
   const donationMethods = document.getElementsByClassName('donation-method');
   const countdownTimer = document.getElementById('countdownTimer');
-  
+
   // Check LocalStorage to see if user has already seen the promo video. If so, set 'hf-hasSeenVideo' so they don't see it again 
   if(!hasSeenVideo){
     setTimeout(() =>{
@@ -131,7 +131,7 @@ jQuery(document).ready(function () {
   if(page) {
     const pageWithoutHash = page.substring(1,page.length)
     const elementWithTabName = document.getElementsByClassName(`data-tab-${pageWithoutHash}`)[0];
-    
+
     // Either open donate modal or go to correct page
     if(pageWithoutHash === "donate"){
       $("#donateButton").click();
